@@ -7,7 +7,7 @@ pkgs.dockerTools.buildImage {
     pathsToLink = [ "/bin" ];
   };
   config = {
-    Cmd = [ "node" "${app}/bin/${name}/main.js" "/env/.env" ];
+    Cmd = [ "node" "${app}/bin/${name}/index.js" "/env/.env" ];
     Volumes = { "/env" = {}; "/out" = {}; };
     WorkingDir = "${app}/bin/${name}";
   };

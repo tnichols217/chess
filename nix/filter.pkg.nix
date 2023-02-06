@@ -11,7 +11,7 @@ pkgs.stdenv.mkDerivation rec {
 
   mkdir -p $out/bin/${name}
 
-  cp -r ./lib/node_modules/${name}/dist/* $out/bin/${name}
+  cp -r ./lib/node_modules/${name}/out/* $out/bin/${name}
 
   '';
 
