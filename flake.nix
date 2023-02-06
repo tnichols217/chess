@@ -17,6 +17,7 @@
           systems = flake-utils.lib.defaultSystems;
           config.projectRoot = ./.;
           source = gitignore.lib.gitignoreSource ./.;
+          autoProjects = true;
           settings = [
             {
               subsystemInfo.nodejs = 18;
